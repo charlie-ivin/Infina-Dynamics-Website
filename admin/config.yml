@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
 logo:
   src: /images/infina_dynamics_logo.jpg
   show_in_header: true
 
-app_title: Infina Dynamics Web Editor
+app_title: Infina Dynamics Admin
 
 backend:
   name: github
