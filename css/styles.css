@@ -520,6 +520,20 @@ button, input, textarea { font-family: inherit; }
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-email {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+.footer-email:hover {
+  color: var(--accent);
+}
+
 .footer-links {
   display: flex;
   gap: 28px;
