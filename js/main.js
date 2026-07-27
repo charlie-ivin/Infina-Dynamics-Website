@@ -64,20 +64,16 @@ if (contactForm) {
   });
 }
 
-// ============================================================
 // Load editable content from content/site.json (managed by Sveltia CMS)
-// ============================================================
 async function loadSiteContent() {
   try {
-    const res = await fetch('content/site.json?t=' + Date.now()); // cache-bust
+    const res = await fetch('content/site.json?t=' + Date.now());
     if (!res.ok) throw new Error('Could not load content');
     const data = await res.json();
 
-    // Apply text / HTML content
     document.querySelectorAll('[data-content]').forEach(el => {
       const key = el.getAttribute('data-content');
       if (data[key] !== undefined) {
-        // Special case: email link
         if (key === 'contact_email' && el.tagName === 'A') {
           el.textContent = data[key];
           el.href = 'mailto:' + data[key];
