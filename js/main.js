@@ -1,4 +1,3 @@
-// Navbar scroll effect
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -11,13 +10,11 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Mobile nav toggle
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   navToggle.classList.toggle('active');
 });
 
-// Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
@@ -25,7 +22,6 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Active nav link on scroll
 const sections = document.querySelectorAll('section[id], header[id]');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY + 120;
@@ -44,27 +40,8 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contact form (demo — no backend)
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message Sent! ✓';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      contactForm.reset();
-    }, 2500);
-  });
-}
-
-// Load editable content from content/site.json (managed by Sveltia CMS)
 async function loadSiteContent() {
   try {
     const res = await fetch('content/site.json?t=' + Date.now());
@@ -73,13 +50,30 @@ async function loadSiteContent() {
 
     document.querySelectorAll('[data-content]').forEach(el => {
       const key = el.getAttribute('data-content');
-      if (data[key] !== undefined) {
-        if (key === 'contact_email' && el.tagName === 'A') {
+      if (data[key] !== undefined && data[key] !== '') {
+        if ((key === 'contact_email' || key === 'footer_email') && el.tagName === 'A') {
           el.textContent = data[key];
           el.href = 'mailto:' + data[key];
         } else {
           el.innerHTML = data[key];
         }
+      }
+    });
+
+    document.querySelectorAll('[data-content-src]').forEach(el => {
+      const key = el.getAttribute('data-content-src');
+      if (data[key]) {
+        el.src = data[key];
+        const titleKey = key.replace('_image', '_title');
+        el.alt = data[titleKey] || '';
+        el.closest('.portfolio-item')?.classList.add('has-image');
+      }
+    });
+
+    document.querySelectorAll('[data-content-href]').forEach(el => {
+      const key = el.getAttribute('data-content-href');
+      if (data[key]) {
+        el.href = 'mailto:' + data[key];
       }
     });
   } catch (err) {
