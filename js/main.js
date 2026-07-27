@@ -1,3 +1,4 @@
+// Navbar scroll effect
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -42,6 +43,7 @@ window.addEventListener('scroll', () => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// SVG icons for services
 const ICONS = {
   layers: '<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>',
   image: '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>',
@@ -122,6 +124,7 @@ async function loadSiteContent() {
     if (!res.ok) throw new Error('Could not load content');
     const data = await res.json();
 
+    // Simple text fields
     document.querySelectorAll('[data-content]').forEach(el => {
       const key = el.getAttribute('data-content');
       if (data[key] !== undefined && data[key] !== '' && typeof data[key] === 'string') {
@@ -134,6 +137,15 @@ async function loadSiteContent() {
       }
     });
 
+    // Image sources (logo, banner, etc.)
+    document.querySelectorAll('[data-content-src]').forEach(el => {
+      const key = el.getAttribute('data-content-src');
+      if (data[key]) {
+        el.src = data[key];
+      }
+    });
+
+    // Dynamic lists
     renderServices(data.services);
     renderProjects(data.projects);
     renderContact(data.contact_items);
