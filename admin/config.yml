@@ -24,6 +24,14 @@ collections:
           - label: Hero Subtitle
             name: hero_subtitle
             widget: text
+          - label: Hero Banner Image
+            name: hero_banner
+            widget: image
+            hint: Large background image on the homepage hero
+          - label: Site Logo
+            name: site_logo
+            widget: image
+            hint: Used in navbar, about section, and footer
 
           - label: About Section Title
             name: about_title
