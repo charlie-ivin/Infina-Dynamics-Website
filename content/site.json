@@ -38,10 +38,26 @@
   "portfolio_title": "Projects That Inspire",
   "portfolio_desc": "A glimpse of the worlds we've helped shape. More coming soon.",
   "projects": [
-    { "title": "Project One", "tag": "Branding", "image": "" },
-    { "title": "Project Two", "tag": "Concept", "image": "" },
-    { "title": "Project Three", "tag": "Themed", "image": "" },
-    { "title": "Project Four", "tag": "Graphic", "image": "" }
+    {
+      "title": "Project One",
+      "tag": "Branding",
+      "image": ""
+    },
+    {
+      "title": "Project Two",
+      "tag": "Concept",
+      "image": ""
+    },
+    {
+      "title": "Project Three",
+      "tag": "Themed",
+      "image": ""
+    },
+    {
+      "title": "Project Four",
+      "tag": "Graphic",
+      "image": ""
+    }
   ],
   "cta_title": "Ready to create something unforgettable?",
   "cta_desc": "Let's talk about your next project. Design has no limits — neither should your vision.",
@@ -60,5 +76,7 @@
     }
   ],
   "footer_email": "admin@infina-dynamics.charlieivin.co.uk",
-  "footer_tagline": "Where design has no limits."
+  "footer_tagline": "Where design has no limits.",
+  "site_logo": "images/infina_dynamics_logo.jpg",
+  "hero_banner": "images/infina_dynamics_cover.jpg"
 }
