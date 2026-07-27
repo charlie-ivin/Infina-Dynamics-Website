@@ -1,26 +1,14 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 
-# ============================================================
-#  Sveltia CMS configuration for Infina Dynamics
-# ============================================================
-#  1. Change `repo` below to your GitHub username/repo
-#  2. For nicer login (instead of personal access token),
-#     deploy the free Cloudflare Worker from:
-#     https://github.com/sveltia/sveltia-cms-auth
-#     then uncomment and set base_url
-# ============================================================
-
 backend:
   name: github
   repo: charlie-ivin/Infina-Dynamics-Website
   branch: main
-  # base_url: https://your-worker.workers.dev  # optional OAuth proxy
+  # base_url: https://your-worker.workers.dev
 
-# Where uploaded images will be stored in the repo
 media_folder: images/uploads
 public_folder: /images/uploads
 
-# Single-file collection = the whole site content lives in one JSON
 collections:
   - name: site
     label: Site Content
@@ -29,7 +17,6 @@ collections:
         label: Homepage Content
         file: content/site.json
         fields:
-          # ---- Hero ----
           - label: Hero Title
             name: hero_title
             widget: text
@@ -38,7 +25,6 @@ collections:
             name: hero_subtitle
             widget: text
 
-          # ---- About ----
           - label: About Section Title
             name: about_title
             widget: string
@@ -70,7 +56,6 @@ collections:
             name: stat3_label
             widget: string
 
-          # ---- Services ----
           - label: Services Section Title
             name: services_title
             widget: string
@@ -102,7 +87,6 @@ collections:
             name: service4_desc
             widget: text
 
-          # ---- Portfolio ----
           - label: Portfolio Section Title
             name: portfolio_title
             widget: string
@@ -112,17 +96,40 @@ collections:
           - label: Project 1 Title
             name: port1_title
             widget: string
+          - label: Project 1 Tag
+            name: port1_tag
+            widget: string
+          - label: Project 1 Image
+            name: port1_image
+            widget: image
           - label: Project 2 Title
             name: port2_title
             widget: string
+          - label: Project 2 Tag
+            name: port2_tag
+            widget: string
+          - label: Project 2 Image
+            name: port2_image
+            widget: image
           - label: Project 3 Title
             name: port3_title
             widget: string
+          - label: Project 3 Tag
+            name: port3_tag
+            widget: string
+          - label: Project 3 Image
+            name: port3_image
+            widget: image
           - label: Project 4 Title
             name: port4_title
             widget: string
+          - label: Project 4 Tag
+            name: port4_tag
+            widget: string
+          - label: Project 4 Image
+            name: port4_image
+            widget: image
 
-          # ---- CTA ----
           - label: CTA Title
             name: cta_title
             widget: string
@@ -130,7 +137,6 @@ collections:
             name: cta_desc
             widget: text
 
-          # ---- Contact ----
           - label: Contact Section Title
             name: contact_title
             widget: string
@@ -144,7 +150,6 @@ collections:
             name: contact_location
             widget: string
 
-          # ---- Footer ----
           - label: Footer Email
             name: footer_email
             widget: string
