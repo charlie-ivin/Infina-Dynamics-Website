@@ -442,12 +442,13 @@ button, input, textarea { font-family: inherit; }
   margin: 0 auto;
 }
 .contact-card {
-  flex: 0 1 320px;
-  width: 320px;
+  flex: 0 1 340px;
+  width: 340px;
+  container-type: inline-size;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 28px 24px;
+  padding: 28px 18px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -465,11 +466,10 @@ a.contact-card:hover {
   color: var(--accent);
 }
 .contact-card span {
-  font-size: 0.95rem;
+  font-size: clamp(0.65rem, 5.2cqw, 0.95rem);
   font-weight: 500;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: visible;
 }
 
 /* ===== Footer ===== */
