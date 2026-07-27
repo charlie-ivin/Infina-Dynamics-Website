@@ -1,6 +1,8 @@
 {
   "hero_title": "WHERE DESIGN<br>HAS NO LIMITS",
   "hero_subtitle": "Creative design studio specialising in branding, graphic design, concept design & themed entertainment.",
+  "hero_banner": "images/infina_dynamics_cover.jpg",
+  "site_logo": "images/infina_dynamics_logo.jpg",
   "about_title": "Design That Leaves a Lasting Impression",
   "about_p1": "Infina Dynamics is a creative design studio specialising in branding, graphic design, concept design, and themed entertainment. Between all of this, our goal is to create work that leaves a lasting impression.",
   "about_p2": "We believe great design has no limits — it transcends trends, speaks across cultures, and turns ideas into experiences people remember. From bold brand identities to immersive themed environments, we craft every project with precision, imagination, and heart.",
@@ -41,22 +43,22 @@
     {
       "title": "Project One",
       "tag": "Branding",
-      "image": ""
+      "image": "https://picsum.photos/id/120/1920/1280.webp"
     },
     {
       "title": "Project Two",
       "tag": "Concept",
-      "image": ""
+      "image": "https://picsum.photos/id/825/1920/1280.webp"
     },
     {
       "title": "Project Three",
       "tag": "Themed",
-      "image": ""
+      "image": "https://picsum.photos/id/828/1920/1280.webp"
     },
     {
       "title": "Project Four",
       "tag": "Graphic",
-      "image": ""
+      "image": "https://picsum.photos/id/769/1920/1280.webp"
     }
   ],
   "cta_title": "Ready to create something unforgettable?",
@@ -65,7 +67,7 @@
   "contact_intro": "Have a project in mind or just want to say hello? We'd love to hear from you.",
   "contact_items": [
     {
-      "label": "Email",
+      "label": "Main Contact Email",
       "value": "zack.blackwood@infina-dynamics.charlieivin.co.uk",
       "type": "email"
     },
@@ -73,10 +75,13 @@
       "label": "Location",
       "value": "Worldwide — Remote First",
       "type": "text"
+    },
+    {
+      "label": "Website Admin",
+      "value": "web.admin@infina-dynamics.charlieivin.co.uk",
+      "type": "email"
     }
   ],
   "footer_email": "admin@infina-dynamics.charlieivin.co.uk",
-  "footer_tagline": "Where design has no limits.",
-  "site_logo": "images/infina_dynamics_logo.jpg",
-  "hero_banner": "images/infina_dynamics_cover.jpg"
+  "footer_tagline": "Where design has no limits."
 }
