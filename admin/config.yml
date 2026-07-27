@@ -12,7 +12,7 @@
 
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # ← change this
+  repo: charlie-ivin/Infina-Dynamics-Website   # ← change this
   branch: main
   # base_url: https://your-worker.workers.dev  # optional OAuth proxy
 
