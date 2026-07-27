@@ -1,7 +1,6 @@
 {
   "hero_title": "WHERE DESIGN<br>HAS NO LIMITS",
   "hero_subtitle": "Creative design studio specialising in branding, graphic design, concept design & themed entertainment.",
-
   "about_title": "Design That Leaves a Lasting Impression",
   "about_p1": "Infina Dynamics is a creative design studio specialising in branding, graphic design, concept design, and themed entertainment. Between all of this, our goal is to create work that leaves a lasting impression.",
   "about_p2": "We believe great design has no limits — it transcends trends, speaks across cultures, and turns ideas into experiences people remember. From bold brand identities to immersive themed environments, we craft every project with precision, imagination, and heart.",
@@ -12,7 +11,6 @@
   "stat2_label": "Passion",
   "stat3_num": "1",
   "stat3_label": "Vision",
-
   "services_title": "Our Design Services",
   "services_desc": "We blend strategy, creativity and technical craft to deliver design that performs and inspires.",
   "service1_title": "Branding",
@@ -23,22 +21,18 @@
   "service3_desc": "Ideation and visualisation of products, experiences and worlds. From initial sketches to polished concept art that sells the vision.",
   "service4_title": "Themed Entertainment",
   "service4_desc": "Immersive environments, attraction concepts, set design and experiential storytelling for parks, events and branded spaces.",
-
   "portfolio_title": "Projects That Inspire",
   "portfolio_desc": "A glimpse of the worlds we've helped shape. More coming soon.",
   "port1_title": "Project One",
   "port2_title": "Project Two",
   "port3_title": "Project Three",
   "port4_title": "Project Four",
-
   "cta_title": "Ready to create something unforgettable?",
   "cta_desc": "Let's talk about your next project. Design has no limits — neither should your vision.",
-
   "contact_title": "Let's Build Something Together",
   "contact_intro": "Have a project in mind or just want to say hello? We'd love to hear from you.",
   "contact_email": "zack.blackwood@infina-dynamics.charlieivin.co.uk",
   "contact_location": "Worldwide — Remote First",
-
-  "footer_email": "admin@infina-dynamics.charlieivin.co.uk",
+  "footer_email": "web.admin@infina-dynamics.charlieivin.co.uk",
   "footer_tagline": "Where design has no limits."
 }
