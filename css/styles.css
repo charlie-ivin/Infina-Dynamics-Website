@@ -434,13 +434,16 @@ button, input, textarea { font-family: inherit; }
   background: var(--bg-alt);
 }
 .contact-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  max-width: 720px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .contact-card {
+  flex: 0 1 260px;
+  width: 260px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -449,6 +452,7 @@ button, input, textarea { font-family: inherit; }
   flex-direction: column;
   gap: 8px;
   transition: all var(--transition);
+  text-align: left;
 }
 a.contact-card:hover {
   border-color: rgba(0, 212, 255, 0.4);
@@ -591,7 +595,13 @@ a.contact-card:hover {
     gap: 40px;
   }
   .contact-cards {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 360px;
+    flex: 1 1 auto;
   }
   .stats { gap: 24px; }
   .portfolio-grid {
