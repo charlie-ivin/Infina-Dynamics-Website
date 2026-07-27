@@ -7,7 +7,23 @@
   <title>Infina Dynamics — Content Manager</title>
 </head>
 <body>
-  <!-- Sveltia CMS loads automatically and looks for ./config.yml -->
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  <script>
+    // Hide "Sign In with GitHub" — Access Token only
+    const hideGithubLogin = () => {
+      document.querySelectorAll('button').forEach(btn => {
+        const text = (btn.textContent || '').trim().toLowerCase();
+        if (text.includes('sign in with github') || text.includes('login with github')) {
+          btn.style.display = 'none';
+        }
+      });
+    };
+    const id = setInterval(hideGithubLogin, 200);
+    setTimeout(() => clearInterval(id), 8000);
+    new MutationObserver(hideGithubLogin).observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  </script>
 </body>
 </html>
