@@ -554,6 +554,31 @@ button, input, textarea { font-family: inherit; }
   border-top: 1px solid var(--border);
   font-size: 0.85rem;
   color: var(--text-muted);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.built-by {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.built-by:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
 }
 .admin-link {
   font-size: 0.8rem;
@@ -601,7 +626,8 @@ button, input, textarea { font-family: inherit; }
     text-align: center;
   }
   .footer-links { flex-wrap: wrap; justify-content: center; }
-  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-bottom-right { justify-content: center; flex-wrap: wrap; }
   .cta-box { padding: 48px 24px; }
 }
 @media (max-width: 480px) {
