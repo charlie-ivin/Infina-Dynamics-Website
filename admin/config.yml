@@ -62,30 +62,29 @@ collections:
           - label: Services Description
             name: services_desc
             widget: text
-          - label: Service 1 Title
-            name: service1_title
-            widget: string
-          - label: Service 1 Description
-            name: service1_desc
-            widget: text
-          - label: Service 2 Title
-            name: service2_title
-            widget: string
-          - label: Service 2 Description
-            name: service2_desc
-            widget: text
-          - label: Service 3 Title
-            name: service3_title
-            widget: string
-          - label: Service 3 Description
-            name: service3_desc
-            widget: text
-          - label: Service 4 Title
-            name: service4_title
-            widget: string
-          - label: Service 4 Description
-            name: service4_desc
-            widget: text
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: desc
+                widget: text
+              - label: Icon
+                name: icon
+                widget: select
+                options:
+                  - { label: Layers (Branding), value: layers }
+                  - { label: Image (Graphic), value: image }
+                  - { label: Arrow Up (Concept), value: arrow-up }
+                  - { label: Home (Themed), value: home }
+                  - { label: Star, value: star }
+                  - { label: Sparkles, value: sparkles }
+                  - { label: Palette, value: palette }
+                  - { label: Pen, value: pen }
 
           - label: Portfolio Section Title
             name: portfolio_title
@@ -93,42 +92,20 @@ collections:
           - label: Portfolio Description
             name: portfolio_desc
             widget: text
-          - label: Project 1 Title
-            name: port1_title
-            widget: string
-          - label: Project 1 Tag
-            name: port1_tag
-            widget: string
-          - label: Project 1 Image
-            name: port1_image
-            widget: image
-          - label: Project 2 Title
-            name: port2_title
-            widget: string
-          - label: Project 2 Tag
-            name: port2_tag
-            widget: string
-          - label: Project 2 Image
-            name: port2_image
-            widget: image
-          - label: Project 3 Title
-            name: port3_title
-            widget: string
-          - label: Project 3 Tag
-            name: port3_tag
-            widget: string
-          - label: Project 3 Image
-            name: port3_image
-            widget: image
-          - label: Project 4 Title
-            name: port4_title
-            widget: string
-          - label: Project 4 Tag
-            name: port4_tag
-            widget: string
-          - label: Project 4 Image
-            name: port4_image
-            widget: image
+          - label: Projects
+            name: projects
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Image
+                name: image
+                widget: image
 
           - label: CTA Title
             name: cta_title
@@ -143,12 +120,26 @@ collections:
           - label: Contact Intro
             name: contact_intro
             widget: text
-          - label: Contact Email
-            name: contact_email
-            widget: string
-          - label: Contact Location
-            name: contact_location
-            widget: string
+          - label: Contact Cards
+            name: contact_items
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - label: Label
+                name: label
+                widget: string
+                hint: e.g. Email, Location, Phone
+              - label: Value
+                name: value
+                widget: string
+              - label: Type
+                name: type
+                widget: select
+                options:
+                  - { label: Email (clickable mailto), value: email }
+                  - { label: Text, value: text }
+                  - { label: Phone (clickable tel), value: phone }
+                  - { label: Link (URL), value: link }
 
           - label: Footer Email
             name: footer_email
