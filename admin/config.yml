@@ -3,7 +3,7 @@ logo:
   src: /images/infina_dynamics_logo.jpg
   show_in_header: true
 
-app_title: Infina Dynamics Admin
+app_title: Infina Dynamics Web Editor
 
 backend:
   name: github
