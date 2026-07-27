@@ -13,34 +13,52 @@
   "stat3_label": "Vision",
   "services_title": "Our Design Services",
   "services_desc": "We blend strategy, creativity and technical craft to deliver design that performs and inspires.",
-  "service1_title": "Branding",
-  "service1_desc": "Complete brand identity systems — logos, visual language, guidelines and strategy that define who you are and how the world sees you.",
-  "service2_title": "Graphic Design",
-  "service2_desc": "Print & digital design: marketing collateral, packaging, social assets, editorial layouts and anything that needs to look exceptional.",
-  "service3_title": "Concept Design",
-  "service3_desc": "Ideation and visualisation of products, experiences and worlds. From initial sketches to polished concept art that sells the vision.",
-  "service4_title": "Themed Entertainment",
-  "service4_desc": "Immersive environments, attraction concepts, set design and experiential storytelling for parks, events and branded spaces.",
+  "services": [
+    {
+      "title": "Branding",
+      "desc": "Complete brand identity systems — logos, visual language, guidelines and strategy that define who you are and how the world sees you.",
+      "icon": "layers"
+    },
+    {
+      "title": "Graphic Design",
+      "desc": "Print & digital design: marketing collateral, packaging, social assets, editorial layouts and anything that needs to look exceptional.",
+      "icon": "image"
+    },
+    {
+      "title": "Concept Design",
+      "desc": "Ideation and visualisation of products, experiences and worlds. From initial sketches to polished concept art that sells the vision.",
+      "icon": "arrow-up"
+    },
+    {
+      "title": "Themed Entertainment",
+      "desc": "Immersive environments, attraction concepts, set design and experiential storytelling for parks, events and branded spaces.",
+      "icon": "home"
+    }
+  ],
   "portfolio_title": "Projects That Inspire",
   "portfolio_desc": "A glimpse of the worlds we've helped shape. More coming soon.",
-  "port1_title": "Project One",
-  "port1_tag": "Branding",
-  "port1_image": "",
-  "port2_title": "Project Two",
-  "port2_tag": "Concept",
-  "port2_image": "",
-  "port3_title": "Project Three",
-  "port3_tag": "Themed",
-  "port3_image": "",
-  "port4_title": "Project Four",
-  "port4_tag": "Graphic",
-  "port4_image": "",
+  "projects": [
+    { "title": "Project One", "tag": "Branding", "image": "" },
+    { "title": "Project Two", "tag": "Concept", "image": "" },
+    { "title": "Project Three", "tag": "Themed", "image": "" },
+    { "title": "Project Four", "tag": "Graphic", "image": "" }
+  ],
   "cta_title": "Ready to create something unforgettable?",
   "cta_desc": "Let's talk about your next project. Design has no limits — neither should your vision.",
   "contact_title": "Let's Build Something Together",
   "contact_intro": "Have a project in mind or just want to say hello? We'd love to hear from you.",
-  "contact_email": "zack.blackwood@infina-dynamics.charlieivin.co.uk",
-  "contact_location": "Worldwide — Remote First",
+  "contact_items": [
+    {
+      "label": "Email",
+      "value": "zack.blackwood@infina-dynamics.charlieivin.co.uk",
+      "type": "email"
+    },
+    {
+      "label": "Location",
+      "value": "Worldwide — Remote First",
+      "type": "text"
+    }
+  ],
   "footer_email": "admin@infina-dynamics.charlieivin.co.uk",
   "footer_tagline": "Where design has no limits."
 }
